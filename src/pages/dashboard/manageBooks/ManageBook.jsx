@@ -3,14 +3,14 @@ import { Link, useNavigate } from 'react-router-dom';
 // import { useDeleteBookMutation, useFetchAllBooksQuery } from '../../../redux/features/books/booksApi';
 import getBaseUrl from '../../../utils/baseURL';
 import axios from 'axios';
-import { useDeleteBookMutation, useFetchAllBooksQuery } from '../../../redux/features/books/booksApi.js';
+import { useDeleteBookMutation, useFetchAllBooksQuery } from '../../../redux/features/books/booksApi';
 
 const ManageBooks = () => {
     const navigate = useNavigate();
 
-    const {data: books, refetch} = useFetchAllBooksQuery()
+    const {data: books, refetch} = useFetchAllBooksQuery();
 
-    const [deleteBook] = useDeleteBookMutation()
+    const [deleteBook] = useDeleteBookMutation();
 
     const handleDeleteBook = async (id) => {
         try {

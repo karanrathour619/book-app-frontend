@@ -13,7 +13,7 @@ const baseQuery = fetchBaseQuery({
     }
 })
 
-const booksApi = createApi({
+const booksApi2 = createApi({
     reducerPath: 'bookApi',
     baseQuery,
     tagTypes: ['Books'],
@@ -60,4 +60,4 @@ const booksApi = createApi({
 })
 
 export const {useFetchAllBooksQuery, useFetchBookByIdQuery, useAddBookMutation, useDeleteBookMutation, useUpdateBookMutation } = booksApi
-export default booksApi
+export default booksApi2

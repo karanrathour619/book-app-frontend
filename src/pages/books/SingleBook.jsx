@@ -4,7 +4,7 @@ import { getImgUrl } from '../../utils/getImgUrl'
 import { FiShoppingCart } from 'react-icons/fi'
 import { useDispatch } from 'react-redux'
 import { addToCart } from '../../redux/features/cart/cartSlice'
-import { useFetchBookByIdQuery } from '../../redux/features/books/booksAPI'
+import { useFetchBookByIdQuery } from '../../redux/features/books/booksApiRedux'
 
 const SingleBook = () => {
     const {id} = useParams()
